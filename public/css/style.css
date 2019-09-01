@@ -1,0 +1,202 @@
+/* https://colorhunt.co/palette/154209 */
+
+* {
+  font-family: "Playfair Display", serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height:auto;
+  margin: 0;
+}
+
+/* :root {
+  --header-bg: #6e2142;
+  --main-inter: #943855;
+  --main-clear: #e16363;
+  --color-text: #ffd692;
+} */
+
+/* :root {
+  --header-bg: #007065;
+  --main-inter: #00a79d;
+  --main-clear: #f5c181;
+  --color-text: #ffeecf;
+} */
+
+:root {
+  --header-bg: #b68471;
+  --main-inter: #efb35f;
+  --main-clear: #ece6da;
+  --color-text: #191814;
+}
+
+h1 {
+  color: var(--color-text);
+  text-shadow: var(--main-inter) 150px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 5vw auto;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+section div {
+  height: 20vh;
+}
+
+section div.illumination {
+  font-size:15vh;
+}
+
+section div:hover{
+  color:white;
+}
+
+header {
+  background: var(--header-bg);
+  color: var(--color-text);
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.bio{
+  margin: 0 auto;
+  width:50vw;
+}
+
+.bio p:first-letter{
+  font-size:5rem;
+}
+
+main {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer{
+  position:fixed;
+  bottom:0;
+  right:0;
+  width:auto;
+  height:auto;
+  font-size:1.2rem;
+}
+
+footer > *:hover{
+  color:#ece6da;
+  transform:scale(1.2);
+  cursor:pointer;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  color: #2d3135;
+}
+
+nav a:link,
+nav a:visited,
+nav a:hover {
+  color: #2d3135;
+}
+
+nav > * {
+  padding-right: 2%;
+}
+
+a:link {
+  color: var(--main-clear);
+  text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+
+  color: var(--main-clear);
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+.medaillon {
+  border-radius: 50%;
+}
+
+.poem {
+  margin: 0 20%;
+  font-size: 2.5vw;
+  width: 50%;
+}
+
+.poem > *:hover {
+  border: 1px white dotted;
+  cursor: pointer;
+}
+
+.poem p:nth-child(even) {
+  color: #ece6da;
+}
+
+body {
+  background: var(--color-text);
+  color: var(--main-inter);
+}
+
+@media(min-width:600px){
+
+.list-poems {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  text-align: left;
+}
+}
+
+.list-poems a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid white;
+  height: 1fr;
+}
+
+
+
+
+
+.list-poems a:hover {
+  border: 1px solid #ece6da;
+  background: #394044;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.list-poems h3:first-letter {
+  font-size: 2rem;
+  color: #ece6da;
+}
+
+.list-poems *:link,
+.list-poems *:hover,
+.list-poems *:visited {
+  color: var(--main-inter);
+}

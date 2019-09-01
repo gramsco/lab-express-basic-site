@@ -1,0 +1,20 @@
+{{#unless title}}
+<div>You've been looking for a poem that does not exist. A poem <i>you</i> should write maybe ... ?</div>
+{{/unless}}
+
+<div class="poem">
+    <h2>{{title}}</h2>
+    {{#each lines}}
+    <p>{{this}}</p>
+    {{/each}}
+</div>
+
+
+
+{{#if title}}
+<a href="#header">
+    <div>Click to go back to the head of the site</div>
+</a>
+{{/if}}
+
+
